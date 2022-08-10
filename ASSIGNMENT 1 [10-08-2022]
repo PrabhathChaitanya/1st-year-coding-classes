@@ -14,8 +14,6 @@ void main()
 		r=i%10;
 		if(r==x)
 		r=y;
-		if(r==y)
-		r=x;
 		a=a*10+r;
 	}
 	for(i=a;i>0;i=i/10)

@@ -1,1 +1,27 @@
 #include<stdio.h>
+void main()
+{
+	int a=0,i,r=0,t,x,y,b=0;
+	printf("enter the number:");
+	scanf("%d",&t);
+	printf("enter x values:");
+	scanf("%d",&x);
+	printf("enter y values:");
+	scanf("%d",&y);
+	for(i=t;i>0;i=i/10)
+	{ 
+		r=i%10;
+		if(r==x)
+		r=y;
+		if(r==y)
+		r=x;
+		a=a*10+r;
+	}
+	for(i=a;i>0;i=i/10)
+	{
+		r=0;
+		r=i%10;
+		b=b*10+r;
+	}
+	printf("%d",b);
+}

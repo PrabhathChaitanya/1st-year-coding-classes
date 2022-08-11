@@ -1,0 +1,23 @@
+/*Given an integer number n, return the difference between the product of its digits and the sum of its digits.*/
+#include<stdio.h>
+int subtract*/ProductAndSum(int);
+int main()
+{
+    int n,r;
+    scanf("%d",&n);
+    r=subtractProductAndSum(n);
+    printf("%d",r);
+    return 0;
+}
+int subtractProductAndSum(int n)
+{
+    int p=1,s=0,r,i,a;
+    for(i=n;i>0;i=i/10)
+    {
+        r=i%10;
+        p=p*r;
+        s=s+r;
+    }
+    a=p-s;
+    return a;
+}

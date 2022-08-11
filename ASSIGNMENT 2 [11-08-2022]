@@ -1,0 +1,17 @@
+/*Arranging coins*/
+#include<stdio.h>
+int arrangeCoins(int n){
+
+    int k = 1;
+  while(k <= n){
+        n -= k++;
+    }
+    return k-1;
+}
+void main()
+{
+    int n,r;
+    scanf("%d",&n);
+    r= arrangeCoins(n);
+    printf("%d",r);
+}

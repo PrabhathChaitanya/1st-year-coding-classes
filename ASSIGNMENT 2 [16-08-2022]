@@ -1,0 +1,24 @@
+/* c program to check each and every number of array if it is prime or not 
+and display all prime numbers of array from right to left*/
+#include<stdio.h>
+void main()
+{
+	int s,i,a[100],t,b=0;
+	printf("enter the size of the array:");
+	scanf("%d",&s);
+	printf("enter the array elements:");
+	for(i=0;i<s;i++)
+		scanf("%d",&a[i]);
+	for(i=0;i<s;i++)
+	{
+		b=0;
+		for(t=1;t<=a[i];t++)
+		{
+			if(a[i]%t==0)
+			b=b+1;
+		}
+		if(b==2)
+		printf("%d ",a[i]);	
+
+	}
+}

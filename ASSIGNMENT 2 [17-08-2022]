@@ -1,0 +1,23 @@
+/*a c program to generate finonacci series by given number using arrays*/
+#include<stdio.h>
+void main()
+{
+	int a=0,b=1,c,n,i,d[100],count=0;
+	printf("enter the values of final number:");
+	scanf("%d",&n);
+	printf("fibinocci series is:\n");
+	printf("%d %d ",a,b);
+	for(i=0;i<100;i++)
+	{
+		c=a+b;
+		a=b;
+		b=c;
+		if(c<n)
+		count=count+1;
+		if(c>n)
+		break;
+		d[i]=c;	
+	 } 
+		for(i=0;i<count;i++)
+		printf("%d ",d[i]); 
+}

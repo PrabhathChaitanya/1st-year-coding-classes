@@ -1,0 +1,19 @@
+/*c program to find missing from array of n consicutive numbers*/
+#include<stdio.h>
+void main()
+{
+	int i,a[100],n;
+	printf("enter the size of array:");
+	scanf("%d",&n);
+	printf("enter the elements:");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		if(a[i]+1!=a[i+1])
+		printf("%d ",a[i]+1);
+	}
+	
+}

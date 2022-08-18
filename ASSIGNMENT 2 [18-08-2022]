@@ -1,0 +1,22 @@
+/* c program to find out sum of factorial values of all elements of array*/
+#include<stdio.h> 
+void main()
+{
+	int a[100],i,n,s=0,r,f=1;
+	printf("enter the array size:");
+	scanf("%d",&n);
+	printf("enter the array elements:");
+	for(i=0;i<n;i++)
+	 scanf("%d",&a[i]);
+	for(i=0;i<n;i++)
+	{
+		r=a[i];f=1;
+		while(r>0)
+		{
+			f=r*f;
+			r--;
+		}
+		s=s+f;
+	}
+	printf("%d",s);
+}

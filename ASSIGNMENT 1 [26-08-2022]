@@ -1,0 +1,28 @@
+/*to read a string and print count of uppercase characters, lowercase,numbers */
+#include<stdio.h>
+	void main()
+{
+    char a[200];
+    int n=0,l=0,u=0,i;
+    scanf("%s",a);
+    for(i=0;a[i]!='\0';i++)
+    {
+    	if(a[i]>='A'&&a[i]<='Z')
+    	u++;
+    	else if(a[i]>='a'&&a[i]<='z')
+    	l++;
+    	else if(a[i]=='0'||a[i]=='1'||a[i]=='2'||a[i]=='3'||a[i]=='4'||a[i]=='5'||a[i]=='6'||a[i]=='7'||a[i]=='8'||a[i]=='9')
+    	n++;
+    	else
+    	continue;
+	}
+	printf("Count of uppercase characters:%d\n",u);
+	printf("Count of lowercase characters:%d\n",l);
+	printf("Count of numbers:%d\n",n);
+}
+Input: 
+Aditya@123
+Output: 
+Count of uppercase characters: 1
+Count of lowercase characters: 5
+Count of numbers : 3

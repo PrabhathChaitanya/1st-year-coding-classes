@@ -13,8 +13,6 @@
     	l++;
     	else if(a[i]<'9'&&a[i]>'0')
     	n++;
-    	else
-    	continue;
 	}
 	printf("Count of uppercase characters:%d\n",u);
 	printf("Count of lowercase characters:%d\n",l);

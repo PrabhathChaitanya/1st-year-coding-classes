@@ -1,0 +1,37 @@
+#include<stdio.h>
+/* a program to read a string and print all subsets of string*/
+#include<string.h>
+void main()
+{
+    char a[200];
+    int i = 0,j = 0,l1 = 0,l2 = 0,in = 0,s = 0;
+
+    printf("Enter string: ");
+    scanf("%s",a);
+    l1 = strlen(a);
+    printf("Enter length: ");
+    scanf("%d", &l2);
+    printf("The possible subsets are:\n");
+    for (i = 1; i <= l1; i++) {
+        if (in-s+1==i) 
+		{
+            if(i==l2) 
+			{
+                for (j=in;j<l1;j++) 
+				{
+                    for (i=s;i<in;i++)
+                        printf("%c",a[i]);
+                    printf("%c\n",a[j]);
+                }
+
+                if (s!= i) {
+                    s++;
+                    in=s;
+                }
+            }
+            else
+                in++;
+        }
+    }
+
+}

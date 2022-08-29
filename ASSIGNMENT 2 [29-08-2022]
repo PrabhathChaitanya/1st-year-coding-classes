@@ -1,0 +1,28 @@
+/*digit frequency*/
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+      char a[10000],c='0';
+      int i,t,count,n;    
+    scanf("%s",a);
+    n=strlen(a);
+     for(i=0;i<10;i++)
+     {
+         count=0;
+         for(t=0;t<n;t++)
+         {
+             if(a[t]==c)
+             {
+                 count++;
+             }
+         }
+         printf("%d ",count);
+     }    
+     return 0;
+}
+`

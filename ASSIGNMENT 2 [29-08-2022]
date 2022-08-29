@@ -22,6 +22,7 @@ int main() {
              }
          }
          printf("%d ",count);
+         c++;
      }    
      return 0;
 }

@@ -1,0 +1,18 @@
+#include<stdio.h>
+void printarr(int [],int);
+void main()
+{
+	int n,i,a[10];
+	printf("enter the no of elements:");
+	scanf("%d",&n);
+	printf("enter the array elements:");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	printarr(a,n);
+}
+void printarr(int a[10],int n)
+{
+	if(n>1)
+	printarr(a,n-1);
+	printf("%d ",a[n-1]);
+}

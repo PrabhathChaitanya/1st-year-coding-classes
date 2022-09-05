@@ -1,0 +1,16 @@
+#include<stdio.h>
+void arrconti(int ,int );
+void main()
+{
+	int f,l;
+    printf("enter the first and last value:");
+    scanf("%d %d",&f,&l);
+    arrconti(f,l);
+}
+void arrconti(int f,int l)
+{
+		printf("%d ",f);
+	if(f<l)
+	arrconti(f+1,l);
+
+}
